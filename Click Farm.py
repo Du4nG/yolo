@@ -1,7 +1,7 @@
 from time import *
-from selenium import webdriver as w # Tự cài thư viện đi nha con đĩ.
+from selenium import webdriver as w 
 
-videos = open('C:\\path\\to\\link.txt') # Có cái file tên là link.txt đính kèm á, copy đường dẫn paste vô rồi sửa định dạng cho giống vầy nè, nếu đường dẫn có folder tên tiếng việt thì không chạy được đâu bà già m.
+videos = open('C:\\path\\to\\link.txt')
 list = videos.readlines()
 
 NUM_OF_TAB = 4
@@ -11,7 +11,7 @@ vid_index = 0
 tab_index = 0
 count = 1
 
-brow = w.Chrome('C:\\path\\chromedriver.exe') # Tương tự cho cháu này.
+brow = w.Chrome('C:\\path\\chromedriver.exe')
 brow.get(list[vid_index])
 
 sleep(1)
@@ -30,4 +30,4 @@ while 1:
         sleep(2)
         brow.get(list[vid_index])
 
-    sleep(30)  # 30s một view  ¯\_(ツ)_/¯  chắc vậy.
+    sleep(30)
